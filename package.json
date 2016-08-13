@@ -1,0 +1,40 @@
+{
+  "name": "node-doc-browser",
+  "version": "1.0.0",
+  "description": "generate Node.js doc in a 3 pane browser",
+  "main": "node-doc-browser",
+  "license": "MIT",
+  "author": "Patrick Mueller <pmuellr@apache.org> (https://github.com/pmuellr)",
+  "bin": {
+    "node-doc-browser": "node-doc-browser.js"
+  },
+  "scripts": {
+    "standard": "standard",
+    "build": "standard",
+    "watch": "nodemon --exec 'npm run build'"
+  },
+  "standard": {
+    "ignore": [
+      "tmp"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmuellr/node-doc-browser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pmuellr/node-doc-browser/issues"
+  },
+  "homepage": "https://github.com/pmuellr/node-doc-browser",
+  "dependencies": {
+    "async": "~2.0.1",
+    "lodash": "~4.15.0",
+    "request": "~2.74.0",
+    "yargs": "~4.8.1",
+    "yield-callback": "~0.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "~1.10.0",
+    "standard": "~7.1.2"
+  }
+}
